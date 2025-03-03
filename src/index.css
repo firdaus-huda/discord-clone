@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "ginto-discord";
+  src: url("./assets/fonts/ABCGintoDiscord-Regular.woff2") format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "ginto-discord-nord";
+  src: url("./assets/fonts/ABCGintoDiscordNord-Bold.woff2") format('woff2');
+  font-weight: 700;
+}
+
+@theme {
+  --font-discord: "ginto-discord", "sans-serif";
+  --font-discord-nord: "ginto-discord-nord", "sans-serif";
+}
+
+@theme {
+  --animate-marquee: marquee1 25s linear infinite;
+  --animate-marquee2: marquee2 25s linear infinite;
+
+  @keyframes marquee1 {
+    0% { transform: translateX(0%) }
+    100% { transform: translateX(-100%) }
+  }
+
+  @keyframes marquee2 {
+    0% { transform: translateX(100%) }
+    100% { transform: translateX(0%) }
+  }
+}
